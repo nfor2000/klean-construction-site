@@ -20,7 +20,14 @@ body {
 .section {
      width: 100%;
      max-width: 1300px;
-     margin: 2.5rem auto;
+     margin: 0 auto;
+     padding-top: 10vh;
+}
+
+.container {
+     width: 100%;
+     max-width: 1300px;
+     margin: 0 auto;
 }
 
 a {
@@ -57,6 +64,7 @@ header::after {
      opacity: 0.85;
      z-index: 0;
 }
+
 #carousel {
      overflow: hidden;
      white-space: nowrap;
@@ -82,7 +90,7 @@ header::after {
 }
 
 #slide3 {
-     background-image: url('../images/IMG-20230829-WA0016.jpg');
+     background-image: url('../img/IMG-20230829-WA0016.jpg');
 }
 
 #slide4 {
@@ -90,20 +98,27 @@ header::after {
 }
 
 #slide5 {
-     background-image: url('../images/IMG-20230829-WA0010.jpg');
+     background-image: url('../img/IMG-20230829-WA0010.jpg');
 }
+
 nav {
      width: 100%;
      position: fixed;
      display: flex;
      align-items: center;
-     justify-content: space-between;
+     justify-content: space-around;
      padding: 1rem 2rem;
      z-index: 2;
      background-color: var(--color-primary2);
-     height: 10vh;
+     height: 8vh;
      left: 0;
      top: 0;
+}
+
+.nav.container {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
 }
 
 .logo {
@@ -113,7 +128,7 @@ nav {
 }
 
 .logo img {
-     width: 3rem;
+     width: 8rem;
 }
 
 .logo h2 {
@@ -194,7 +209,7 @@ nav {
      grid-template-columns: repeat(2, 1fr);
      grid-gap: 2rem;
      align-items: center;
-     padding: 1rem;
+     padding: 10vh 1rem 0;
 }
 
 #about_us h2 {
@@ -220,25 +235,27 @@ nav {
      gap: 1rem;
      color: var(--color-primary2);
 }
-.projects_container{
+
+.projects_container {
      display: grid;
-     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
      grid-gap: 2rem;
      margin-top: 1rem;
 }
-.projects{
+
+.projects {
      height: 300px;
      position: relative;
      overflow: hidden;
      cursor: pointer;
 }
 
-.projects div{
+.projects div {
      height: 100%;
      width: 100%;
 }
 
-.after{
+.after {
      position: absolute;
      left: 0;
      top: 0;
@@ -247,14 +264,17 @@ nav {
      top: -100%;
      transition: var(--transition);
 }
-.projects:hover .after{
+
+.projects:hover .after {
      top: 0;
 }
-.projects img{
+
+.projects img {
      object-fit: cover;
      height: 100%;
      width: 100%;
 }
+
 #review_us {
      display: grid;
      grid-template-columns: 1fr 1fr;
@@ -313,7 +333,7 @@ nav {
 }
 
 #services {
-     padding: 1em;
+     padding:10vh 1em 0;
 }
 
 #services h2 {
@@ -367,7 +387,7 @@ nav {
 }
 
 #contact_us {
-     padding: 1rem;
+     padding: 10vh 1rem;
 }
 
 .map_address_container {
@@ -491,7 +511,7 @@ footer span {
           align-items: center;
           padding: 2rem;
      }
-     
+
      .why_choose_us div {
           flex-direction: column;
      }
