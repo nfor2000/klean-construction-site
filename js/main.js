@@ -5,6 +5,7 @@ $(document).ready(function () {
      var year = new Date().getFullYear();
      $('.year').html(`${year}`);
 
+    
      var interval = window.setInterval(rotateSlides, 3000)
 
                function rotateSlides() {
@@ -20,7 +21,9 @@ $(document).ready(function () {
 
 })
 
-
+window.addEventListener("load",function(){
+     this.document.getElementById('preloader').style.display = "none";
+})
 
 const hamburger = document.querySelector('.hamburger');
 const menu = document.querySelector('.side_menu');

@@ -8,7 +8,27 @@
      background-color: #ececec;
      color: var(--color-dark);
 }
-
+#preloader{
+     position: fixed;
+     height: 100vh;
+     width: 100vw;
+     background-color: #ececec;
+     z-index: 9999;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.loader{
+     height: 100px;
+     width: 100px;
+     border: 10px solid ;
+     border-bottom: 10px solid var(--color-primary);
+     border-radius: 50%;
+     animation-name: rotate;
+     animation-duration: 1s;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+}
 html {
      scroll-behavior: smooth;
 }
@@ -556,4 +576,13 @@ footer span {
 
 .show {
      right: 0;
+}
+
+@keyframes rotate {
+     from{
+          transform: rotate(0deg);
+     }
+     to{
+          transform: rotate(360deg);
+     }
 }
