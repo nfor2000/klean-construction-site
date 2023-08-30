@@ -72,17 +72,6 @@ header::after {
      display: inline-block;
 }
 
-.slide-image {
-     width: 100vw;
-     height: 100vh;
-}
-
-.slide-image {
-     width: 100vw;
-     height: 100vh;
-     background-position: center;
-     background-size: cover;
-}
 
 #slide1 {
      background-image: url('../img/img1.png');
@@ -93,7 +82,7 @@ header::after {
 }
 
 #slide3 {
-     background-image: url('../img/img3.png');
+     background-image: url('../images/IMG-20230829-WA0016.jpg');
 }
 
 #slide4 {
@@ -101,7 +90,7 @@ header::after {
 }
 
 #slide5 {
-     background-image: url('../img/img5.png');
+     background-image: url('../images/IMG-20230829-WA0010.jpg');
 }
 nav {
      width: 100%;
