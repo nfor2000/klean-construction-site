@@ -220,7 +220,41 @@ nav {
      gap: 1rem;
      color: var(--color-primary2);
 }
+.projects_container{
+     display: grid;
+     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+     grid-gap: 2rem;
+     margin-top: 1rem;
+}
+.projects{
+     height: 300px;
+     position: relative;
+     overflow: hidden;
+     cursor: pointer;
+}
 
+.projects div{
+     height: 100%;
+     width: 100%;
+}
+
+.after{
+     position: absolute;
+     left: 0;
+     top: 0;
+     height: 100%;
+     width: 100%;
+     top: -100%;
+     transition: var(--transition);
+}
+.projects:hover .after{
+     top: 0;
+}
+.projects img{
+     object-fit: cover;
+     height: 100%;
+     width: 100%;
+}
 #review_us {
      display: grid;
      grid-template-columns: 1fr 1fr;
